@@ -1,28 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
-    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 60px;
+            color: orangered;
+        }
+        body {
+            background-image: url(fruit.jpeg);
+          }
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 5px;
+            color: black;
+            background-color: lightsteelblue;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 20px;
+          }
+          p{
+            text-align: center;
+            font-size: 25px;
+            color: black;
+            text-shadow: 5px 3px darkorange;
+          }
+          a{
+            font-size: 20px;
+            color:lightcoral
+          }
+          ul{
+            list-style-type: none;
+            overflow: hidden;
+            display: block;
+          }
+          .dropdown{
+            position: relative;
+            display: inline-block;
+          }
+          .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px white;
+            padding: 7px 9px;
+            z-index: 1;
+          }
+          .dropdown:hover .dropdown-content{
+            display: block;
+          }
+    </style>
 </head>
 <body>
-    <header class="head">
-        <div class="mid">
-            <ul class="navbar">
-                <li><a href="home.html" class="active">Home</a></li>
-                <li><a href="gallery.html" class="active">Gallery</a></li>
-            </ul>
-        </div>
-    </header>
-    <section class="sec">
-        A planet is a large, rounded astronomical body that is generally required to be in orbit around a star, stellar remnant, or brown dwarf, and is not one itself. The Solar System has eight planets by the most restrictive definition of the term: the terrestrial planets Mercury, Venus, Earth, and Mars, and the giant planets Jupiter, Saturn, Uranus, and Neptune. The best available theory of planet formation is the nebular hypothesis, which posits that an interstellar cloud collapses out of a nebula to create a young protostar orbited by a protoplanetary disk. Planets grow in this disk by the gradual accumulation of material driven by gravity, a process called accretion.
-    </section>
-    <footer class="det">
-          <p>Contact</p>  
-            <p>+91 8963520090  Planeteria Villa. planets@gmail.com</p>
-           
-
-    </footer>
+    <div>
+        <h1>Fresh Fruits</h1>
+        <ul>
+          <a href="#home" style="text-decoration: none">Home &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</a>
+          <a href="#news" style="text-decoration: none">News &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</a> 
+          <a href="#contact" style="text-decoration: none">
+            <div class="dropdown">
+              <span>About &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</span>
+              <div class="dropdown-content">
+                <p>PhoneNo: +91 9076542890</p>
+              </div>
+            </div>
+            <a href="#about" style="text-decoration: none">
+            <div class="dropdown">
+            <span>Contact</span>
+            <div class="dropdown-content">
+            <p>Fresh Fruits at Athira's, Koramangala Block 7, Bangalore</p>
+            </div> 
+  </div>
+        <p>A bowl of healthy fruits a day keeps a doctor away!</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <button class="button">Vist Us on WWW.fruits.athira.in
+        </button>
+    </div>
 </body>
 </html>
