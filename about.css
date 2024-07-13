@@ -1,0 +1,44 @@
+.mid{
+    margin-top: 10px;
+  margin-bottom: 13px;
+  margin-right: 100px;
+  margin-left: 600px;   /* to bring to center ..10px from top and auto to center from left right*/
+   display: block;
+   width: 700px;
+   /* border: 2px solid rgb(232, 227, 227); */
+
+  } 
+  body{
+    background-color: black;
+  }
+  .navbar{
+    display: inline-block;
+
+   }
+   .navbar li a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(231, 242, 171);
+    padding: 20px;
+    font-size: 25px;
+   }
+   .navbar li{
+    display: inline-block;
+   }
+   .navbar li a:hover,.navbar li a:active{
+/* text-decoration: underline; */
+color: rgb(94, 79, 79);
+   }
+   
+.det{
+    color: wheat;
+    margin-top: 400px;
+    margin-left: 30px;
+}
+.sec{
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-right: 60px;
+    color: rgb(236, 232, 226);
+    font-size: 20px;
+}
