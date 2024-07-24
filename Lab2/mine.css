@@ -1,0 +1,80 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch; /* Ensure all items stretch to the same height */
+    gap: 10px;
+    padding: 10px;
+    border:5px solid black;
+    background-color: #fffdd0;
+    color: black;
+}
+.head{
+    display:flex;
+    margin:20px;
+    padding:10px;
+    height:100px;
+    flex-direction: row;
+    gap:1000px;
+    border-bottom: 10px solid black;
+    color: black;
+    background-color: #fffdd0;
+}
+body{
+    background-color: #fffdd0;
+}
+
+
+.item {
+    border: 6px solid black;
+    flex: 1 1 200px; /* Grow, shrink, and have a base width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    min-height: 600px; /* Adjust this value to make the items longer vertically */
+    max-width: 200px; /* Adjust this value to control the width of the items */
+    background-color: 10px solid #fffdd0;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    width: 100%;
+    flex-grow: 1; /* Allow paragraph to grow and take available space */
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black;
+}
+@media(max-width:1000px)
+{
+    .item{
+        display:block;
+        min-width: 80%;
+        min-height:300px;
+    }
+    .head{
+        display: block;
+    }
+}
+
